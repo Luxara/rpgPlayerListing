@@ -1,0 +1,68 @@
+<div class="container">
+    <ul>
+        <li>
+           <h1>Add Player</h1> 
+        </li>
+        <li><img [src]="imagePath" alt=""></li>
+    </ul>
+    
+    
+
+    <ul>
+        <li>
+        <div class="info-card">
+            <h5 *ngIf="success"> New player added!</h5>
+        </div> 
+        </li>
+
+        <li>
+            <div class="info_card">
+                <form [formGroup]="playerForm" (ngSubmit)="onSubmit()">        
+                    <div class="row_item">
+                        <label>Player name:</label>
+                        <input type="text" formControlName="playerName">
+                        <div *ngIf="submitted && playerForm.controls['playerName'].errors" class="error">
+                            <div *ngIf="playerForm.controls['playerName'].errors['required']">A Player name is required.</div>
+                        </div>
+                    </div>
+            
+                    <div class="row_item">
+                        <label>Character name:</label>
+                        <input type="text" formControlName="characterName">
+                        <div *ngIf="submitted && playerForm.controls['characterName'].errors" class="error">
+                            <div *ngIf="playerForm.controls['characterName'].errors['required']">A Character name is required.</div>
+                        </div>
+                    </div>
+            
+                    <div class="row_item">
+                        <label>Character race:</label>
+                        <input type="text" formControlName="race">
+                        <div *ngIf="submitted && playerForm.controls['race'].errors" class="error">
+                            <div *ngIf="playerForm.controls['race'].errors['required']">Please choose a race for your character.</div>
+                        </div>
+                    </div>
+            
+                    <div class="row_item">
+                        <label>Character class:</label>
+                        <input type="text" formControlName="class">
+                        <div *ngIf="submitted && playerForm.controls['class'].errors" class="error">
+                            <div *ngIf="playerForm.controls['class'].errors['required']">Please choose a class for your character.</div>
+                        </div>
+                    </div>
+            
+                    <input type="submit" value="Add Player" class="submit">
+                
+                </form>
+            </div>
+        </li>
+
+    </ul>
+    
+    
+   
+    
+
+
+
+
+

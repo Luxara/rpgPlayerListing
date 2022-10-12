@@ -1,0 +1,22 @@
+<div class="container">
+
+    <ul>
+        <li>
+           <h1>Playerlist</h1> 
+        </li>
+        <li><img [src]="imagePath" alt=""></li>
+    </ul>
+
+
+    <ul *ngIf="players">
+        <li *ngFor="let player of players">
+        <div class="info_card">
+            <div class="row_header" ><p ><span>{{player.name}}</span></p><button class="delete_btn" (click)="deletePlayer(player)">X</button></div>
+            <div class="row_item"><p><span class="separator"> Character:</span> {{player.characterName}}</p></div>
+            <div class="row_item"><p><span class="separator">Race:</span> {{player.race}} <span class="separator_middle">Class:</span> {{player.class}}</p></div>
+        </div>
+        </li>
+    </ul>   
+</div>
+
+

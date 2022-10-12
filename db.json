@@ -1,0 +1,25 @@
+{
+  "player": [
+    {
+      "id": 1,
+      "name": "Lux",
+      "characterName": "BossCat Wildclaws",
+      "race": "Wildcat",
+      "class": "Hunter"
+    },
+    {
+      "id": 2,
+      "name": "Kira",
+      "characterName": "Taiyu the Sun",
+      "race": "Demon",
+      "class": "Katana Mage"
+    },
+    {
+      "id": 3,
+      "name": "Remy",
+      "characterName": "Crow",
+      "race": "Birdfolk",
+      "class": "Reaper"
+    }
+  ]
+}

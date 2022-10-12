@@ -1,0 +1,64 @@
+h1{
+    margin-top: -1%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li img{
+    height: 405px;
+    width: 250px;
+    margin-left: -30px;
+}
+
+.info_card {
+    height: 100%;
+    background: rgb(238, 238, 238);
+    padding: 3%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row_header{
+    background-color: blueviolet;
+    width: 100%;
+    padding-left: 6%;
+    margin-left: -3%;
+    margin-top: -3%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: block;
+}
+
+.row_item{
+    flex:1;
+}
+
+.row_item span, .row_header span{
+ font-weight: bold;
+ color: black;
+}
+
+.row_item p {
+    font-weight: bold;
+    color: gray;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.row_item p a{
+    color: blue;
+}
+
+.separator, .separator_middle{
+    margin-right: 4px;
+}
+
+.separator_middle{
+    margin-left: 16px;
+}

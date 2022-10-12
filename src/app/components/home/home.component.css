@@ -1,0 +1,79 @@
+h1{
+    margin-top: -1%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li img{
+    height: 315px;
+    width: 200px;
+}
+
+.info_card {
+    height: 100%;
+    background: rgb(238, 238, 238);
+    padding: 3%;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row_header{
+    background-color: blueviolet;
+    width: 100%;
+    padding-left: 6%;
+    margin-left: -3%;
+    margin-top: -3%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: block;
+}
+
+.row_item{
+    flex:1;
+}
+
+.row_item span, .row_header span{
+ font-weight: bold;
+ color: black;
+}
+
+.delete_btn{
+    display: block;
+    float: right;
+    width:26px;
+    height: 26px;
+    margin-right: 10px;
+    margin-top: -42px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delete_btn:hover{
+    background-color: rgb(220, 0,0);
+}
+
+.row_item p {
+    font-weight: bold;
+    color: gray;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.separator, .separator_middle{
+    margin-right: 4px;
+}
+
+.separator_middle{
+    margin-left: 16px;
+}
